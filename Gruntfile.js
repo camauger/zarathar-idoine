@@ -56,6 +56,7 @@ module.exports = function (grunt) {
         },
         files: {
           "dist/styles/main.css": "src/styles/main.scss",
+          "dist/styles/print.css": "src/styles/print.scss",
         },
       },
       // Configuration pour la production

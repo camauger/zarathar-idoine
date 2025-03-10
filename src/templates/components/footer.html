@@ -1,4 +1,4 @@
-<footer role="contentinfo">
+<footer role="contentinfo" id="footer">
   <div class="footer-content">
     <p class="footer-text">
       &copy; {{ site.year }} {{ site.title }}. {{ t.all_rights_reserved }}
@@ -18,18 +18,7 @@
           </a>
         </li>
         {% endif %}
-        <!-- Twitter Link -->
-        {% if site.social_media.twitter %}
-        <li>
-          <a
-            href="{{ site.social_media.twitter.url }}"
-            aria-label="{{ site.social_media.twitter.name }}"
-            class="social-link"
-          >
-            {{ site.social_media.twitter.name }}
-          </a>
-        </li>
-        {% endif %}
+
       </ul>
     </nav>
     {% endif %}
