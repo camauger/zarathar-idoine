@@ -3,7 +3,6 @@
  * Ce script gère toutes les interactions dynamiques du header, incluant :
  * - Le menu mobile (hamburger)
  * - Le sélecteur de langue
- * - Le toggle du thème sombre/clair
  * - L'animation du header au scroll
  */
 
@@ -31,7 +30,6 @@ class HeaderController {
   init() {
     this.initMenuToggle();
     this.initLangSwitcher();
-    this.initThemeToggle();
     this.initScrollBehavior();
     this.initClickOutside();
     this.initKeyboardNavigation();

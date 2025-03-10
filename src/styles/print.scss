@@ -1,0 +1,204 @@
+:root {
+  --page-width: 210mm; /* Largeur A4 */
+  --page-height: 297mm; /* Hauteur A4 */
+  --margin: 20mm; /* Marge */
+  --main-color: #333333; /* Couleur principale du texte */
+  --accent-color: #0066cc; /* Couleur d'accentuation */
+  --background-color: #ffffff; /* Couleur de fond */
+  --header-font: "Georgia", serif;
+  --body-font: "Arial", sans-serif;
+}
+
+/* Styles généraux */
+body {
+  font-family: var(--body-font);
+  color: var(--main-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+  font-size: 11pt;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuration pour l'impression */
+@page {
+  size: A4;
+  margin: var(--margin);
+  @top-center {
+    content: "Mon Guide";
+  }
+  @bottom-center {
+    content: "Page " counter(page);
+  }
+}
+
+/* Styles pour la mise en page */
+.book {
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+/* Style pour la page de couverture */
+.cover {
+  height: var(--page-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  page-break-after: always;
+}
+
+.cover h1 {
+  font-family: var(--header-font);
+  font-size: 32pt;
+  color: var(--accent-color);
+  margin-bottom: 20mm;
+}
+
+.cover .author {
+  font-size: 16pt;
+  margin-top: 10mm;
+}
+
+/* Styles pour les titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+  color: var(--accent-color);
+  break-after: avoid;
+}
+
+h1 {
+  font-size: 24pt;
+  margin-top: 15mm;
+}
+
+h2 {
+  font-size: 18pt;
+  margin-top: 10mm;
+}
+
+h3 {
+  font-size: 14pt;
+  margin-top: 8mm;
+}
+
+/* Tables des matières */
+.toc {
+  page-break-after: always;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 5mm;
+}
+
+.toc a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.toc a::after {
+  content: leader(".") target-counter(attr(href), page);
+}
+
+/* Chapitre */
+.chapter {
+  page-break-before: always;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10mm auto;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 9pt;
+  margin-top: -5mm;
+}
+
+/* Notes et encadrés */
+.note {
+  background-color: #f5f5f5;
+  border-left: 5px solid var(--accent-color);
+  padding: 5mm;
+  margin: 5mm 0;
+}
+
+/* Code */
+pre,
+code {
+  font-family: "Courier New", monospace;
+  background-color: #f5f5f5;
+  padding: 2mm;
+  border-radius: 2mm;
+  font-size: 9pt;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5mm 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 3mm;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+/* Liens */
+a {
+  color: var(--accent-color);
+}
+
+/* Pour l'impression */
+@media print {
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+
+  /* Éviter les sauts de page à l'intérieur des éléments */
+  p,
+  blockquote,
+  table,
+  figure,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  /* Forcer la pagination pour certains éléments */
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

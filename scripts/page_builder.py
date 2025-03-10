@@ -93,7 +93,8 @@ class PageBuilder:
                 'lang': lang,
                 'url': custom_url,
                 'content_translations': page_trans,
-                **metadata
+                **metadata,
+                'content': markdown_filter(frontmatter.loads(content).content),
             }
             translations_static = self.translations.get(lang, {})
             rendered = self.jinja_env.get_template(template_name).render(
