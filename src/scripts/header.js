@@ -15,7 +15,6 @@ class HeaderController {
     this.navMenu = document.querySelector(".nav-menu");
     this.langToggle = document.querySelector(".lang-toggle");
     this.langMenu = document.querySelector(".lang-menu");
-    this.themeToggle = document.querySelector(".theme-toggle");
 
     // État
     this.lastScroll = 0;
@@ -79,41 +78,6 @@ class HeaderController {
       if (!isExpanded && this.navMenu.classList.contains("visible")) {
         this.menuToggle.click();
       }
-    });
-  }
-
-  /**
-   * Gestion du thème sombre/clair
-   * - Toggle du thème
-   * - Sauvegarde de la préférence
-   * - Animation des icônes
-   */
-  initThemeToggle() {
-    if (!this.themeToggle) return;
-
-    // Récupérer le thème sauvegardé ou utiliser la préférence système
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    const currentTheme = savedTheme || (prefersDark ? "dark" : "light");
-
-    // Appliquer le thème initial
-    document.documentElement.setAttribute("data-theme", currentTheme);
-
-    this.themeToggle.addEventListener("click", () => {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-      // Animer le changement de thème
-      document.documentElement.classList.add("theme-transition");
-      document.documentElement.setAttribute("data-theme", newTheme);
-      localStorage.setItem("theme", newTheme);
-
-      // Retirer la classe d'animation après la transition
-      setTimeout(() => {
-        document.documentElement.classList.remove("theme-transition");
-      }, 300);
     });
   }
 
