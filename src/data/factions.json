@@ -2,31 +2,48 @@
     "factions": [
         {
             "name": "Empire du Salthar",
+            "groupe": "Eldavar",
             "description": "Militariste et expansionniste, l’Empire voit en Zarathar une terre stratégique à conquérir, imposant l'ordre au détriment des libertés locales.",
+            "texte": "L'Empire du Salthar représente la puissance militaire pure appliquée à la colonisation systématique. Héritier d'une longue tradition conquérante, Salthar considère Zarathar comme un territoire à pacifier et exploiter selon des méthodes éprouvées : fortifications stratégiques, garnisons permanentes, et assimilation forcée des populations locales. Pour le Salthar, chaque île conquise doit devenir une extension directe de l'Empire, gouvernée selon les lois de Soltharion et défendue par des citoyens-soldats loyaux.",
             "quote": "Chaque île conquise est une lame affûtée contre le chaos. Chaque victoire est un serment renouvelé à l’Empereur.",
             "quote_author": "Général Kaldor",
-            "archetype": "Le Chevalier-Légionnaire, combattant loyal confronté aux réalités complexes de Zarathar."
+            "archetype": {
+                "nom": "Le Vétéran Colonial",
+                "texte": "Ancien soldat de l'Empire ayant servi dans les premières campagnes de Zarathar, désormais établi comme colon-milicien. Tiraillé entre loyauté envers l'Empire et pragmatisme né de l'expérience locale. Expertise militaire, leadership naturel, mais aussi compréhension croissante des complexités de l'archipel que les stratèges de Soltharion ne saisissent pas."
+            }
         },
         {
             "name": "Royaume d'Andorn",
             "description": "Puissance maritime montante utilisant commerce et foi polythéiste pour étendre son influence, rival direct de l’Empire du Salthar.",
+            "texte": "Andorn incarne une approche coloniale sophistiquée mêlant expansion économique, influence religieuse et diplomatie maritime. Contrairement à Salthar, Andorn privilégie l'intégration progressive : convertir plutôt que conquérir, commercer plutôt que réquisitionner, négocier plutôt qu'imposer. Cette stratégie reflète autant un calcul pragmatique qu'une philosophie théologique - les dieux d'Andorn favorisent ceux qui savent transformer l'étranger en allié. Cependant, cette approche douce cache une détermination impitoyable : Andorn entend dominer l'archipel par l'influence culturelle et économique totale.",
             "quote": "Nos dieux sont miséricordieux avec ceux qui accueillent leurs paroles. Pour les autres, seul demeure le silence des vagues.",
             "quote_author": "Grand Prêtre Taloran",
-            "archetype": "Le Prêtre-Navigateur, explorateur spirituel cherchant à découvrir les vérités cachées de Zarathar."
+            "archetype": {
+                "nom": "Le Missionnaire-Marchand",
+                "texte": "Représentant d'Andorn combinant prosélytisme religieux et acuité commerciale, naviguant entre sincérité spirituelle et opportunisme politique. Compétences en négociation, connaissance des cultes locaux, réseau de contacts inter-îles. Confronté aux contradictions entre idéaux religieux et réalités coloniales, cherchant l'équilibre entre conversion authentique et expansion stratégique."
+            }
         },
         {
             "name": "Ligue de Syldorne",
             "description": "Fédération marchande subtile, experte en diplomatie, intrigues économiques, et manipulation politique, descendants d’elfes des mers.",
             "quote": "Le plus puissant des royaumes se soumet sans même le savoir lorsque ses coffres s'ouvrent à nos trésors.",
             "quote_author": "Dame Elyria",
-            "archetype": "L’Espion-Marchand, manipulateur subtil maîtrisant les intrigues commerciales et diplomatiques."
+            "texte": "La Ligue de Syldorne pratique la colonisation comme un art subtil d'influence économique et d'infiltration culturelle. Fédération de cités-états marchandes dirigées par des descendants d'elfes des mers, Syldorne comprend que le véritable pouvoir réside dans le contrôle des flux : information, capital, technologie, et influence. Plutôt que d'occuper territoires ou convertir populations, Syldorne crée des dépendances économiques inextricables. Ses agents opèrent dans l'ombre, manipulant marchés et politique locale, transformant rivaux en partenaires endettés et alliés en instruments inconscients de l'hégémonie Syldorne.",
+            "archetype": {
+                "nom": "L'Agent d'Influence",
+                "texte": "Opératif de Syldorne spécialisé dans l'espionnage économique et la manipulation politique discrète. Expertise en finance, analyse des réseaux de pouvoir, technologie gemmaire. Personnage tiraillé entre loyauté envers la Ligue et sympathie croissante pour les populations locales exploitées. Maîtrise l'art de paraître neutre tout en servant des intérêts précis, naviguant dans les zones grises morales inhérentes au soft power."
+            }
         },
         {
             "name": "Draconides",
             "description": "Peuple natif descendant des dragons primordiaux, gardiens du Zarroktharn, divisés en clans liés aux éléments, méfiants envers les colons.",
             "quote": "Vous nous prenez pour des sauvages, mais c’est vous qui ignorez la voix du feu et les chants du vent.",
+            "texte": "Les Draconides incarnent l'héritage vivant de la bataille primordiale entre dragons et géants. Ce peuple semi-draconique a évolué pendant des millénaires en symbiose spirituelle avec le Zarroktharn, développant une compréhension intime des forces élémentaires qui gouvernent l'archipel. Organisés en quatre clans correspondant aux éléments primordiaux, les Draconides considèrent leur rôle de gardiens comme un devoir sacré transmis par leurs ancêtres draconiques. L'arrivée des colons représente la plus grave menace à leur équilibre millénaire, forçant ce peuple contemplatif à choisir entre adaptation douloureuse et résistance destructrice.",
             "quote_author": "Shaman Kaelthys",
-            "archetype": "Le Gardien du Volcan, protecteur des traditions et de l'équilibre naturel face à la menace coloniale."
+            "archetype": {
+                "nom": "Le Médiateur Élémentaire",
+                "texte": "Draconide progressiste cherchant à préserver l'héritage de son peuple tout en établissant des ponts avec les colons. Maîtrise innée de la magie élémentaire, connaissance approfondie des cycles naturels, capacité de communication inter-espèces. Personnage déchiré entre traditions ancestrales et nécessité d'évolution, servant d'interface cruciale entre deux mondes incompatibles."
+            }
         },
         {
             "name": "Guilde des Artificiers",

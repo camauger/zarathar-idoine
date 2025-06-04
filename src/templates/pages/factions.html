@@ -4,27 +4,48 @@
   {% with hero_title=page.title, hero_description=page.description, hero_cta=page.hero_cta, hero_image=page.hero_image %}
   {% include "components/hero.html" %}
   {% endwith %}
-<section class="factions">
+
+<section class="factions" aria-labelledby="factions-title">
   <h2 id="factions-title">Les Factions de Zarathar</h2>
 
   {% for faction in factions %}
     <article class="faction-card" aria-labelledby="faction-title-{{ loop.index }}">
+<figure>
+          <img src="{{ '/assets/images/default.jpg' }}" alt="Faction {{ faction.name }}">
+        </figure>
       <header>
         <h3 id="faction-title-{{ loop.index }}">{{ faction.name }}</h3>
+
       </header>
-      <p class="faction-description">
-        {{ faction.description }}
-      </p>
-      <blockquote class="faction-quote">
-        <p>« {{ faction.quote }} »</p>
-        <footer>— {{ faction.quote_author }}</footer>
-      </blockquote>
-      <div class="faction-archetype">
-        <strong>Archétype jouable :</strong> {{ faction.archetype }}
-      </div>
+
+      <main>
+
+        <div class="faction-content">
+          <p class="faction-description">
+            {{ faction.description }}
+          </p>
+          <p class="faction-texte">
+            {{ faction.texte }}
+          </p>
+        </div>
+
+        <blockquote class="faction-quote">
+          <p>« {{ faction.quote }} »</p>
+          <footer>— {{ faction.quote_author }}</footer>
+        </blockquote>
+
+        <div class="faction-archetype">
+          <h4>Archétype jouable</h4>
+          <p class="faction-archetype-nom">
+            {{ faction.archetype.nom }}
+          </p>
+          <p class="faction-archetype-texte">
+            {{ faction.archetype.texte }}
+          </p>
+        </div>
+      </main>
     </article>
   {% endfor %}
 </section>
-
 
 {% endblock %}
