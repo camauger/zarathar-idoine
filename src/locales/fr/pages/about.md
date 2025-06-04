@@ -1,6 +1,6 @@
 ---
 title: À propos de Zarathar
-hero_cta: Contactez-moi
+hero_cta: Télécharger le guide de démarrage
 template: pages/about.html
 
 ---
