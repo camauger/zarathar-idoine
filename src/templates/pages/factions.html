@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+
+{% block content %}
+  {% with hero_title=page.title, hero_description=page.description, hero_cta=page.hero_cta, hero_image=page.hero_image %}
+  {% include "components/hero.html" %}
+  {% endwith %}
+<section class="factions">
+  <h2 id="factions-title">Les Factions de Zarathar</h2>
+
+  {% for faction in factions %}
+    <article class="faction-card" aria-labelledby="faction-title-{{ loop.index }}">
+      <header>
+        <h3 id="faction-title-{{ loop.index }}">{{ faction.name }}</h3>
+      </header>
+      <p class="faction-description">
+        {{ faction.description }}
+      </p>
+      <blockquote class="faction-quote">
+        <p>« {{ faction.quote }} »</p>
+        <footer>— {{ faction.quote_author }}</footer>
+      </blockquote>
+      <div class="faction-archetype">
+        <strong>Archétype jouable :</strong> {{ faction.archetype }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
+
+
+{% endblock %}

@@ -42,6 +42,7 @@ class SiteBuilder:
         self.translations = config_loader.load_translations()
         self.projects = config_loader.load_projects()
         self.site_config = config_loader.load_site_config()
+        self.factions = config_loader.load_factions()
 
         self.jinja_env = Environment(
             loader=FileSystemLoader(str(self.src_path / "templates")),
@@ -54,6 +55,7 @@ class SiteBuilder:
         self.is_multilingual = len(self.site_config.get("languages", [])) > 1
         self.jinja_env.globals["is_multilingual"] = self.is_multilingual
         self.jinja_env.globals["is_unilingual"] = not self.is_multilingual
+        self.jinja_env.globals["factions"] = self.factions.get("factions", [])
 
         self.static_manager = StaticFileManager(self.src_path, self.dist_path)
 

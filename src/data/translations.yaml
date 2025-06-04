@@ -8,15 +8,10 @@ fr:
   categories: Catégories
   close: Fermer
   dark_mode: Mode sombre
-  developpement_web_description: "Conception de sites web modernes, accessibles et performants, centrés sur l'expérience utilisateur."
-  developpement_web: "Développement Web"
   draft: Brouillon
   frontend_projects: "Projets de développement front-end"
   home: Accueil
-  home_title: "Développeur Web et Créateur de Jeux de Rôle"
-  jeux_de_role_creations: "Créations de jeux de rôle"
-  jeux_de_role_description: "Conception d’univers immersifs et de mécaniques engageantes pour des expériences de jeu mémorables."
-  jeux_de_role: "Création de Jeux de Rôle"
+  home_title: "Campagne de jeux de rôle"
   keyword_link_label: "Voir tous les articles avec ce mot-clé"
   keyword_prefix: "Mot-clé: "
   keywords_heading: "Mots-clés"
@@ -64,24 +59,6 @@ fr:
   image_page: Voir la page de l’image
   image_download: Télécharger l’image
   keyword_no_article: Aucun article trouvé pour ce mot-clé.
-  skills_title: "Mes Compétences"
-  technical_skills: "Compétences Techniques"
-  technical_skills_list:
-    - name: "Langages"
-      description: "HTML, CSS, JavaScript, Python"
-    - name: "Développement Front-end"
-      description: "HTML5, CSS3, JavaScript (ES6+), UI/UX"
-    - name: "Développement Back-end"
-      description: "Python (Flask, Django), PHP"
-    - name: "Gestion de bases de données"
-      description: "MySQL, PostgreSQL"
-    - name: "SEO et Performance Web"
-      description: "Optimisation, accessibilité"
-  soft_skills: "Compétences Générales"
-  soft_skills_list:
-    - "Communication et travail en équipe"
-    - "Gestion de projet agile"
-    - "Esprit d’analyse et résolution de problèmes"
   glossary_title: "Glossaire"
   glossary_description: "Glossaire"
   categories_heading: "Catégories"
@@ -111,6 +88,9 @@ fr:
   keywords: Mots-clés
   tags: Étiquettes
   hero_cta: Télécharger le kit de démarrage
+  factions: Factions
+  monsters: Bestiaire
+
 
 en:
   about_title: About
@@ -122,15 +102,9 @@ en:
   categories: Categories
   close: Close
   dark_mode: Dark mode
-  developpement_web_description: "Designing modern, accessible, and high-performance websites focused on user experience."
-  developpement_web: "Web Development"
   draft: Draft
-  frontend_projects: "Front-end Development Projects"
   home: Home
-  home_title: "Web Developer and Role-playing Game Creator"
-  jeux_de_role_creations: "Role-playing Game Creations"
-  jeux_de_role_description: "Creating immersive worlds and engaging mechanics for memorable gaming experiences."
-  jeux_de_role: "Role-playing Game Design"
+  home_title: "Role-playing Game Campaign"
   keyword_link_label: "View all articles with this keyword"
   keyword_prefix: "Keyword: "
   keywords_heading: "Keywords"
@@ -160,10 +134,7 @@ en:
   search: Search
   skip_to_content: Skip to main content
   social_links: Social links
-  strategie_numerique_description: "Develop high-performance digital solutions tailored to your needs to maximize your online impact."
-  strategie_numerique: "Digital Strategy"
   tags: Tags
-  technologies_not_specified: "Technologies not specified"
   updated_date: "Updated on"
   updated_on: Updated on
   view_all_posts: View all posts
@@ -178,24 +149,6 @@ en:
   image_page: View image page
   image_download: Download image
   keyword_no_article: No articles found for this keyword.
-  skills_title: "My Skills"
-  technical_skills: "Technical Skills"
-  technical_skills_list:
-    - name: "Languages"
-      description: "HTML, CSS, JavaScript, Python"
-    - name: "Front-end Development"
-      description: "HTML5, CSS3, JavaScript (ES6+), UI/UX"
-    - name: "Back-end Development"
-      description: "Python (Flask, Django), PHP"
-    - name: "Database Management"
-      description: "MySQL, PostgreSQL"
-    - name: "SEO & Web Performance"
-      description: "Optimization, accessibility"
-  soft_skills: "Soft Skills"
-  soft_skills_list:
-    - "Communication & teamwork"
-    - "Agile project management"
-    - "Analytical thinking & problem-solving"
   glossary_title: "Glossary"
   glossary_description: "Glossary"
   categories_heading: "Categories"
@@ -225,4 +178,6 @@ en:
   keywords: Keywords
   tags: Tags
   hero_cta: Download the quickstart kit
+  factions: Factions
+  monsters: Bestiary
 

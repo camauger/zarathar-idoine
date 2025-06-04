@@ -21,6 +21,8 @@ def build_page(content, template_name, lang, custom_url, is_post, slug,
     md_content = parsed.content
     html_content = markdown_filter(md_content)
 
+    
+
     # Déterminer l'URL de la page en fonction du type
     if is_post:
         effective_slug = slug if slug is not None else metadata.get(

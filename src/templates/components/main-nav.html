@@ -7,9 +7,12 @@
   </button>
   <ul id="main-menu" class="nav-menu" role="menu">
     {{ nav_link('', t.home, page, is_unilingual) }}
+      {{ nav_link('factions', t.factions, page, is_unilingual) }}
+    {{ nav_link('monsters', t.monsters, page, is_unilingual) }}
+
     {{ nav_link('blog', t.blog, page, is_unilingual) }}
     {{ nav_link('about', t.about, page, is_unilingual) }}
-    {{ nav_link('glossaire', t.glossary_title, page, is_unilingual) }}
+    {{ nav_link('glossary', t.glossary_title, page, is_unilingual) }}
     {{ nav_link('gallery', t.gallery_title, page, is_unilingual) }}
   </ul>
 </nav>

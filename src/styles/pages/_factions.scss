@@ -1,0 +1,48 @@
+.factions {
+  padding: 1.5rem;
+}
+
+.faction-card {
+  background: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.faction-card h3 {
+  margin-top: 0;
+  color: #2b3a42;
+  font-size: 1.4rem;
+}
+
+.faction-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 0.75rem;
+}
+
+.faction-quote {
+  border-left: 4px solid #e5c484;
+  padding-left: 0.9rem;
+  font-style: italic;
+  color: #606060;
+  margin-bottom: 0.8rem;
+}
+
+.faction-quote footer {
+  margin-top: 0.4rem;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+  color: #888;
+}
+
+.faction-archetype {
+  background-color: #f8f4ea;
+  padding: 0.6rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #555;
+}

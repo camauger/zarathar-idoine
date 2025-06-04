@@ -1,0 +1,53 @@
+{
+    "factions": [
+        {
+            "name": "Empire du Salthar",
+            "description": "Militariste et expansionniste, l’Empire voit en Zarathar une terre stratégique à conquérir, imposant l'ordre au détriment des libertés locales.",
+            "quote": "Chaque île conquise est une lame affûtée contre le chaos. Chaque victoire est un serment renouvelé à l’Empereur.",
+            "quote_author": "Général Kaldor",
+            "archetype": "Le Chevalier-Légionnaire, combattant loyal confronté aux réalités complexes de Zarathar."
+        },
+        {
+            "name": "Royaume d'Andorn",
+            "description": "Puissance maritime montante utilisant commerce et foi polythéiste pour étendre son influence, rival direct de l’Empire du Salthar.",
+            "quote": "Nos dieux sont miséricordieux avec ceux qui accueillent leurs paroles. Pour les autres, seul demeure le silence des vagues.",
+            "quote_author": "Grand Prêtre Taloran",
+            "archetype": "Le Prêtre-Navigateur, explorateur spirituel cherchant à découvrir les vérités cachées de Zarathar."
+        },
+        {
+            "name": "Ligue de Syldorne",
+            "description": "Fédération marchande subtile, experte en diplomatie, intrigues économiques, et manipulation politique, descendants d’elfes des mers.",
+            "quote": "Le plus puissant des royaumes se soumet sans même le savoir lorsque ses coffres s'ouvrent à nos trésors.",
+            "quote_author": "Dame Elyria",
+            "archetype": "L’Espion-Marchand, manipulateur subtil maîtrisant les intrigues commerciales et diplomatiques."
+        },
+        {
+            "name": "Draconides",
+            "description": "Peuple natif descendant des dragons primordiaux, gardiens du Zarroktharn, divisés en clans liés aux éléments, méfiants envers les colons.",
+            "quote": "Vous nous prenez pour des sauvages, mais c’est vous qui ignorez la voix du feu et les chants du vent.",
+            "quote_author": "Shaman Kaelthys",
+            "archetype": "Le Gardien du Volcan, protecteur des traditions et de l'équilibre naturel face à la menace coloniale."
+        },
+        {
+            "name": "Guilde des Artificiers",
+            "description": "Maîtres de la technologie gemmaire et créateurs d’objets magiques, cherchant à exploiter les ressources volcaniques de Zarathar, parfois sans considération éthique.",
+            "quote": "La nature nous offre ses gemmes, nous lui offrons l'ordre et la structure. C'est l'équilibre parfait.",
+            "quote_author": "Maître-Artificier Zelias",
+            "archetype": "L’Alchimiste-Gemmologue, inventeur passionné fasciné par les pouvoirs élémentaires des gemmes."
+        },
+        {
+            "name": "Champions d'Aurelios",
+            "description": "Ordre monastique guerrier dédié à la purification spirituelle et matérielle, opposé aux cultures jugées impures de Zarathar.",
+            "quote": "La lumière d’Aurelios brûle tout mensonge. Purifiez-vous ou soyez purifiés par l'épée.",
+            "quote_author": "Paladin Alaric",
+            "archetype": "Le Paladin-Purificateur, guerrier sacré déchiré entre une foi intransigeante et les nuances de Zarathar."
+        },
+        {
+            "name": "Pirates de la Brume Éternelle",
+            "description": "Navigateurs insaisissables utilisant les brouillards magiques, se proclamant protecteurs de la nature contre les abus des colons.",
+            "quote": "Les Brumes sont nos alliées et notre armure. Que ceux qui pillent notre terre connaissent notre colère.",
+            "quote_author": "Capitaine Varenne",
+            "archetype": "Le Contrebandier des Brumes, capitaine insaisissable aux motivations ambiguës, naviguant entre liberté et profit."
+        }
+    ]
+}
