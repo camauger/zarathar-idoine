@@ -1,4 +1,18 @@
 // Section Navigation Styles
+
+:root {
+  --promise-border-color: #000;
+  --section-spacing-mobile: 2rem;
+  --section-spacing-desktop: 4rem;
+  --content-max-width: 1200px;
+  --content-padding-mobile: 1rem;
+  --content-padding-desktop: 2rem;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --focus-outline: 2px solid var(--primary-color);
+  --focus-outline-offset: 2px;
+}
+
 .section-container {
   position: relative;
   width: 100%;
@@ -14,11 +28,15 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: var(--section-spacing-mobile) var(--content-padding-mobile);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    padding: var(--section-spacing-desktop) var(--content-padding-desktop);
+  }
 
   &::before {
     content: '';
@@ -33,12 +51,24 @@
 }
 
 .section-content {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    gap: 3rem;
+  }
+
+  h2, h3 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 2rem;
+    animation: mistFadeIn 1.5s ease-out, glowText 4s ease-in-out infinite;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 // Animations
@@ -248,15 +278,6 @@
   background-color: var(--background-color-alt);
   color: var(--text-color);
 
-  .section-content {
-    text-align: center;
-  }
-
-  h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 3rem;
-    animation: mistFadeIn 1.5s ease-out, glowText 4s ease-in-out infinite;
-  }
 
   ul {
     list-style-type: none;
@@ -267,14 +288,49 @@
     margin: 0 auto;
 
     li {
-      margin-bottom: 1.5rem;
       padding: 2rem;
+      padding-left: 6rem;
       background: var(--background-color);
       border-radius: 12px;
       transition: transform 0.3s ease;
       position: relative;
       overflow: hidden;
       animation: mistFadeIn 1.5s ease-out forwards;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        opacity: 0.8;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      &:nth-child(1)::before {
+        content: '\f0c1'; // Link icon
+      }
+
+      &:nth-child(2)::before {
+        content: '\f1b2'; // Car icon
+      }
+
+      &:nth-child(3)::before {
+        content: '\f0ac'; // Globe icon
+      }
+
+      &:nth-child(4)::before {
+        content: '\f0e7'; // Lightning bolt icon
+      }
+
+      &:nth-child(5)::before {
+        content: '\f0eb'; // Lightbulb icon
+      }
 
       @for $i from 1 through 5 {
         &:nth-child(#{$i}) {
@@ -284,6 +340,11 @@
 
       &:hover {
         transform: translateY(-3px);
+
+        &::before {
+          transform: translateY(-50%) scale(1.2);
+          opacity: 1;
+        }
       }
 
       strong {
@@ -305,25 +366,19 @@
   background-color: var(--background-color-light);
   color: var(--text-color-dark);
 
-  .section-content {
-    text-align: center;
-  }
 
-  h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 3rem;
-    animation: mistFadeIn 1.5s ease-out, floatText 6s ease-in-out infinite;
-  }
 
   ul {
     list-style-type: none;
     padding: 0;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
 
     li {
+      border: 1px solid var(--promise-border-color);
       margin-bottom: 1.5rem;
       padding: 2rem;
       background: var(--background-color);
@@ -362,9 +417,6 @@
   background-color: var(--background-color-alt);
   color: var(--text-color);
 
-  .section-content {
-    text-align: center;
-  }
 
   h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -393,6 +445,14 @@
       transform: translateY(-5px);
     }
 
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      margin-bottom: 2rem;
+    }
+
     h4 {
       color: var(--primary-color);
       margin-bottom: 2rem;
@@ -418,6 +478,7 @@
       padding: 0;
 
       li {
+        border: 1px solid var(--promise-border-color);
         margin-top: 1.5rem;
         padding: 2rem;
         background-color: var(--background-color-alt);

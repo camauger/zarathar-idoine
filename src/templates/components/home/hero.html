@@ -1,0 +1,15 @@
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    {% if page.lang == 'fr' %}
+    <h1>Zarathar</h1>
+    <p class="subtitle">L'archipel des brumes et des dragons</p>
+    {% else %}
+    <h1>Zarathar</h1>
+    <p class="subtitle">The archipelago of mists and dragons</p>
+    {% endif %}
+    <p class="hero-description">{{ page.home_description }}</p>
+    <a href="https://github.com/camauger/idoine" class="btn btn-primary">{{ t.hero_cta }}</a>
+  </div>
+</section>
