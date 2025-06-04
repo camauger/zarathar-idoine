@@ -1,0 +1,15 @@
+{% if not is_unilingual %}
+<div class="language-switcher" role="group" aria-label="{{ t.language_switcher }}">
+  {% for lang_code in site.languages %}
+    {% if lang_code != page.lang %}
+      {% set current_path = page.url|replace('/' ~ page.lang ~ '/', '/') %}
+      <a href="/{{ lang_code }}{{ current_path }}"
+         class="lang-link"
+         hreflang="{{ lang_code }}"
+         lang="{{ lang_code }}">
+        {{ site.language_names[lang_code] }}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}

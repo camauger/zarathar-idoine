@@ -1,11 +1,11 @@
 title: 'Zarathar'
 tagline: 'Campagne de jeu de rôle'
-base_url: 'https://christianamauger.com'
+base_url: 'https://zarathar.com'
 blog_url: '/blog'
 glossary_url: '/glossaire'
 author: 'Christian Amauger'
 
-languages: ['fr']
+languages: ['fr', 'en']
 default_lang: 'fr'
 language_names:
   fr: 'Français'

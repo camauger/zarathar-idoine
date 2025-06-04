@@ -1,5 +1,5 @@
 ---
-title: "Démarrage Rapide"
+title: "Accueil"
 author: "Christian Amauger"
 lang: fr
 documentclass: book

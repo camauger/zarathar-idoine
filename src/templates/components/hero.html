@@ -1,11 +1,14 @@
-{% set hero_image = page.hero_image | default('/assets/images/default.jpg') %}
-{% set hero_title = page.hero_title | default('') %}
-{% set hero_description = page.hero_description | default('') %}
 
-<section class="hero" style="background-image: url('{{ hero_image }}');">
+<section class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>{{ page.title }}</h1>
+    {% if page.lang == 'fr' %}
+    <h1>Zarathar</h1>
+    <p class="subtitle">L'archipel des brumes et des dragons</p>
+    {% else %}
+    <h1>Zarathar</h1>
+    <p class="subtitle">The archipelago of mists and dragons</p>
+    {% endif %}
     <p class="hero-description">{{ page.home_description }}</p>
     <a href="https://github.com/camauger/idoine" class="btn btn-primary">{{ t.hero_cta }}</a>
   </div>
