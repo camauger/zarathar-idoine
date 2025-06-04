@@ -3,18 +3,23 @@
         {
             "name": "Empire du Salthar",
             "groupe": "Eldavar",
-            "description": "Militariste et expansionniste, l’Empire voit en Zarathar une terre stratégique à conquérir, imposant l'ordre au détriment des libertés locales.",
+            "image": "salthar.png",
+            "icon": "fas fa-chess-rook",
+            "couleur": "#000000",
+            "description": "Militariste et expansionniste, l'Empire voit en Zarathar une terre stratégique à conquérir, imposant l'ordre au détriment des libertés locales.",
             "texte": "L'Empire du Salthar représente la puissance militaire pure appliquée à la colonisation systématique. Héritier d'une longue tradition conquérante, Salthar considère Zarathar comme un territoire à pacifier et exploiter selon des méthodes éprouvées : fortifications stratégiques, garnisons permanentes, et assimilation forcée des populations locales. Pour le Salthar, chaque île conquise doit devenir une extension directe de l'Empire, gouvernée selon les lois de Soltharion et défendue par des citoyens-soldats loyaux.",
-            "quote": "Chaque île conquise est une lame affûtée contre le chaos. Chaque victoire est un serment renouvelé à l’Empereur.",
+            "quote": "Chaque île conquise est une lame affûtée contre le chaos. Chaque victoire est un serment renouvelé à l'Empereur.",
             "quote_author": "Général Kaldor",
             "archetype": {
                 "nom": "Le Vétéran Colonial",
+                "image": "archetype.png",
                 "texte": "Ancien soldat de l'Empire ayant servi dans les premières campagnes de Zarathar, désormais établi comme colon-milicien. Tiraillé entre loyauté envers l'Empire et pragmatisme né de l'expérience locale. Expertise militaire, leadership naturel, mais aussi compréhension croissante des complexités de l'archipel que les stratèges de Soltharion ne saisissent pas."
             }
         },
         {
             "name": "Royaume d'Andorn",
-            "description": "Puissance maritime montante utilisant commerce et foi polythéiste pour étendre son influence, rival direct de l’Empire du Salthar.",
+            "icon": "fas fa-anchor",
+            "description": "Puissance maritime montante utilisant commerce et foi polythéiste pour étendre son influence, rival direct de l'Empire du Salthar.",
             "texte": "Andorn incarne une approche coloniale sophistiquée mêlant expansion économique, influence religieuse et diplomatie maritime. Contrairement à Salthar, Andorn privilégie l'intégration progressive : convertir plutôt que conquérir, commercer plutôt que réquisitionner, négocier plutôt qu'imposer. Cette stratégie reflète autant un calcul pragmatique qu'une philosophie théologique - les dieux d'Andorn favorisent ceux qui savent transformer l'étranger en allié. Cependant, cette approche douce cache une détermination impitoyable : Andorn entend dominer l'archipel par l'influence culturelle et économique totale.",
             "quote": "Nos dieux sont miséricordieux avec ceux qui accueillent leurs paroles. Pour les autres, seul demeure le silence des vagues.",
             "quote_author": "Grand Prêtre Taloran",
@@ -25,7 +30,8 @@
         },
         {
             "name": "Ligue de Syldorne",
-            "description": "Fédération marchande subtile, experte en diplomatie, intrigues économiques, et manipulation politique, descendants d’elfes des mers.",
+            "icon": "fas fa-coins",
+            "description": "Fédération marchande subtile, experte en diplomatie, intrigues économiques, et manipulation politique, descendants d'elfes des mers.",
             "quote": "Le plus puissant des royaumes se soumet sans même le savoir lorsque ses coffres s'ouvrent à nos trésors.",
             "quote_author": "Dame Elyria",
             "texte": "La Ligue de Syldorne pratique la colonisation comme un art subtil d'influence économique et d'infiltration culturelle. Fédération de cités-états marchandes dirigées par des descendants d'elfes des mers, Syldorne comprend que le véritable pouvoir réside dans le contrôle des flux : information, capital, technologie, et influence. Plutôt que d'occuper territoires ou convertir populations, Syldorne crée des dépendances économiques inextricables. Ses agents opèrent dans l'ombre, manipulant marchés et politique locale, transformant rivaux en partenaires endettés et alliés en instruments inconscients de l'hégémonie Syldorne.",
@@ -36,8 +42,9 @@
         },
         {
             "name": "Draconides",
+            "icon": "fa-solid fa-dragon",
             "description": "Peuple natif descendant des dragons primordiaux, gardiens du Zarroktharn, divisés en clans liés aux éléments, méfiants envers les colons.",
-            "quote": "Vous nous prenez pour des sauvages, mais c’est vous qui ignorez la voix du feu et les chants du vent.",
+            "quote": "Vous nous prenez pour des sauvages, mais c'est vous qui ignorez la voix du feu et les chants du vent.",
             "texte": "Les Draconides incarnent l'héritage vivant de la bataille primordiale entre dragons et géants. Ce peuple semi-draconique a évolué pendant des millénaires en symbiose spirituelle avec le Zarroktharn, développant une compréhension intime des forces élémentaires qui gouvernent l'archipel. Organisés en quatre clans correspondant aux éléments primordiaux, les Draconides considèrent leur rôle de gardiens comme un devoir sacré transmis par leurs ancêtres draconiques. L'arrivée des colons représente la plus grave menace à leur équilibre millénaire, forçant ce peuple contemplatif à choisir entre adaptation douloureuse et résistance destructrice.",
             "quote_author": "Shaman Kaelthys",
             "archetype": {
@@ -47,24 +54,39 @@
         },
         {
             "name": "Guilde des Artificiers",
-            "description": "Maîtres de la technologie gemmaire et créateurs d’objets magiques, cherchant à exploiter les ressources volcaniques de Zarathar, parfois sans considération éthique.",
+            "icon": "fa-solid fa-gem",
+            "description": "Maîtres de la technologie gemmaire et créateurs d'objets magiques, cherchant à exploiter les ressources volcaniques de Zarathar, parfois sans considération éthique.",
+            "texte": "Confrérie technologique transcendant les frontières politiques, la Guilde des Artificiers représente la fusion innovante entre magie gemmaire locale et ingénierie d'Eldavar. Ces maîtres-artisans développent des créations révolutionnaires : golems de pierre volcanique, systèmes d'irrigation gemmaire, mécanismes de défense urbaine alimentés par cristaux élémentaires. Leur neutralité politique apparente cache une ambition profonde : devenir indispensables à toutes les factions en contrôlant les technologies de pointe. Leurs ateliers à Aquila constituent des zones d'expérimentation perpétuelle où se rencontrent savoir-faire colonial et mystères autochtones.",
             "quote": "La nature nous offre ses gemmes, nous lui offrons l'ordre et la structure. C'est l'équilibre parfait.",
             "quote_author": "Maître-Artificier Zelias",
-            "archetype": "L’Alchimiste-Gemmologue, inventeur passionné fasciné par les pouvoirs élémentaires des gemmes."
+            "archetype": {
+                "nom": "L'Alchimiste-Gemmologue",
+                "texte": "Inventeur passionné fasciné par les pouvoirs élémentaires des gemmes. Maîtrise de la magie gemmaire, connaissance approfondie des cycles naturels, capacité de communication inter-espèces. Personnage déchiré entre traditions ancestrales et nécessité d'évolution, servant d'interface cruciale entre deux mondes incompatibles."
+            }
         },
         {
             "name": "Champions d'Aurelios",
+            "icon": "fa-solid fa-sun",
             "description": "Ordre monastique guerrier dédié à la purification spirituelle et matérielle, opposé aux cultures jugées impures de Zarathar.",
-            "quote": "La lumière d’Aurelios brûle tout mensonge. Purifiez-vous ou soyez purifiés par l'épée.",
+            "quote": "La lumière d'Aurelios brûle tout mensonge. Purifiez-vous ou soyez purifiés par l'épée.",
+            "texte": "Ordre monastique guerrier d'origine Andornaise, les Champions d'Aurelios incarnent l'approche la plus radicale de la \"civilisation\" coloniale. Convaincus que les forces primordiales de Zarathar représentent une corruption spirituelle fondamentale, ils prônent la \"purification\" systématique de l'archipel par destruction des sites mystiques et conversion forcée des Draconides. Leur fanatisme religieux les rend imprévisibles et dangereux, mais leur discipline militaire et leur dévotion absolue en font des alliés précieux pour les factions cherchant des solutions extrêmes aux problèmes autochtones",
             "quote_author": "Paladin Alaric",
-            "archetype": "Le Paladin-Purificateur, guerrier sacré déchiré entre une foi intransigeante et les nuances de Zarathar."
+            "archetype": {
+                "nom": "Le Croisé en Doute",
+                "texte": "Champion d'Aurelios confronté aux complexités morales de sa mission, découvrant progressivement la beauté et la sagesse des traditions locales. Formation militaire d'élite, conviction religieuse forte mais questionnée, loyauté conflictuelle. Personnage explorant les tensions entre dogme et réalité, fanatisme et compassion, cherchant sa propre définition de la justice divine."
+            }
         },
         {
             "name": "Pirates de la Brume Éternelle",
+            "icon": "fa-solid fa-cloud",
             "description": "Navigateurs insaisissables utilisant les brouillards magiques, se proclamant protecteurs de la nature contre les abus des colons.",
+            "texte": "Les Pirates de la Brume Éternelle demeurent l'une des forces les plus énigmatiques de l'archipel. Loin d'être de simples bandits maritimes, ils constituent une organisation quasi-mystique dédiée à la préservation de ce qu'ils appellent \"l'harmonie primordiale\" de Zarathar. Utilisant les brouillards magiques naturels comme camouflage et moyen de transport, ils frappent sélectivement les opérations coloniales qu'ils jugent les plus destructrices pour l'équilibre écologique. Leurs origines restent débattues : descendants de premiers colons \"retournés sauvages\", alliance secrète avec les forces primordiales, ou manifestation spontanée de la volonté de l'archipel lui-même. Leur connaissance intime des phénomènes mystiques et leur capacité à disparaître dans les brumes suggèrent une connexion profonde avec les mystères de Zarathar.",
             "quote": "Les Brumes sont nos alliées et notre armure. Que ceux qui pillent notre terre connaissent notre colère.",
             "quote_author": "Capitaine Varenne",
-            "archetype": "Le Contrebandier des Brumes, capitaine insaisissable aux motivations ambiguës, naviguant entre liberté et profit."
+            "archetype": {
+                "nom": "L'Éclaireur des Brumes",
+                "texte": "Ancien colon reconverti à la philosophie pirate ou membre né dans leurs rangs, spécialisé dans la navigation mystique et la guérilla maritime. Compétences en survie, magie météorologique, connaissance des passages secrets. Personnage tiraillé entre isolement volontaire et désir de connexion humaine, porteur d'une vision écologique radicale mais possédant des informations cruciales sur les mystères de l'archipel."
+            }
         }
     ]
 }

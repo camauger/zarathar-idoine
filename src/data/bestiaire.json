@@ -1,0 +1,46 @@
+{
+    "monstres": [
+        {
+            "name": "Crabe d’Obsidienne",
+            "description": "Créature robuste des rivages volcaniques, protégée par une carapace en obsidienne, résistante au feu et aux armes ordinaires.",
+            "quote": "Quand tu vois le sable noir bouger, cours. Ce crabe-là ne craint ni l’épée ni le feu.",
+            "quote_author": "Pêcheur du village côtier de Florénis",
+            "hook": "Les crabes deviennent inexplicablement agressifs, attaquant les villages côtiers. Quelle magie ancienne perturbe leur équilibre ?"
+        },
+        {
+            "name": "Hurlevent",
+            "description": "Gigantesque oiseau lié aux tempêtes magiques des Falaises des Mille Chants, son cri annonce souvent des bouleversements majeurs.",
+            "quote": "Quand le Hurlevent chante, écoute bien. C’est Zarathar elle-même qui te prévient du destin qui approche.",
+            "quote_author": "Lysandra, prêtresse des vents",
+            "hook": "Un Hurlevent semble guider ou menacer une expédition des Cartographes dans les Falaises. Que cherche-t-il à révéler ou protéger ?"
+        },
+        {
+            "name": "Ours-Pieuvre (Ursocèthra)",
+            "description": "Hybride terrifiant aux tentacules agiles et aux membres puissants, rôdant près des côtes et attaquant sans prévenir.",
+            "quote": "L’océan respire, mais ce souffle-là porte des tentacules. Ne dors jamais trop près du rivage.",
+            "quote_author": "Ancien marin devenu ermite",
+            "hook": "Plusieurs disparitions nocturnes frappent un village côtier, les habitants terrifiés demandent de l’aide aux aventuriers."
+        },
+        {
+            "name": "Ombres des Profondeurs",
+            "description": "Entités mystérieuses issues des abysses marines, perçues comme des âmes errantes d'anciens dragons et géants disparus.",
+            "quote": "L’eau noire prend parfois forme humaine, mais elle ne murmure que désespoir et solitude.",
+            "quote_author": "Journal de bord d’un navire disparu",
+            "hook": "Un navire marchand sombre mystérieusement, attirant les aventuriers vers des profondeurs hantées par ces ombres gardiennes."
+        },
+        {
+            "name": "Brumes Éthérées",
+            "description": "Phénomène magique vivant, capable d’altérer la réalité ou de transporter ceux qu’il engloutit vers d’autres lieux ou plans.",
+            "quote": "J’ai marché dix pas dans la brume, mais quand j’en suis sorti, dix ans avaient passé.",
+            "quote_author": "Explorateur revenu des brumes",
+            "hook": "Une brume soudaine sépare le groupe d'aventuriers, les plongeant chacun dans des épreuves personnelles. Quelles vérités révélera-t-elle ?"
+        },
+        {
+            "name": "Grives de Saphir",
+            "description": "Oiseaux sacrés aux plumes bleues lumineuses, messagers divins désormais affligés par un mal mystérieux qui affecte leurs chants.",
+            "quote": "Lorsque les grives cessent de chanter, c’est que le monde lui-même retient son souffle.",
+            "quote_author": "Lysandra, prêtresse des Plumes",
+            "hook": "La maladie touchant les Grives pousse les aventuriers à enquêter, révélant des expériences interdites menées par les Artificiers."
+        }
+    ]
+}
