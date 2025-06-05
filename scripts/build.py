@@ -55,7 +55,7 @@ class SiteBuilder:
         self.is_multilingual = len(self.site_config.get("languages", [])) > 1
         self.jinja_env.globals["is_multilingual"] = self.is_multilingual
         self.jinja_env.globals["is_unilingual"] = not self.is_multilingual
-        self.jinja_env.globals["factions"] = self.factions.get("factions", [])
+        self.jinja_env.globals["factions"] = self.factions
 
         self.static_manager = StaticFileManager(self.src_path, self.dist_path)
 
