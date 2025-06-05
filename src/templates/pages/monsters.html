@@ -1,5 +1,4 @@
-<section class="bestiaire">
-  <h2 id="bestiaire-title">Bestiaire de Zarathar</h2>
+<section class="bestiaire" >
 
   {% for monstre in monstres %}
     <article class="monstre-card" aria-labelledby="monstre-title-{{ loop.index }}">
@@ -9,13 +8,13 @@
       <p class="monstre-description">
         {{ monstre.description }}
       </p>
-      <blockquote class="monstre-quote">
+      <blockquote class="monstre-quote" cite="{{ monstre.quote_author }}">
         <p>« {{ monstre.quote }} »</p>
         <footer>— {{ monstre.quote_author }}</footer>
       </blockquote>
-      <div class="monstre-hook">
+      <section class="monstre-hook">
         <strong>Accroche narrative :</strong> {{ monstre.hook }}
-      </div>
+      </section>
     </article>
   {% endfor %}
 </section>

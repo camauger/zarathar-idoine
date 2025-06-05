@@ -1,15 +1,13 @@
-
-<section class="hero">
+<section class="hero" {% if hero_image %}style="background-image: url('{{ hero_image }}');"{% endif %}>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    {% if page.lang == 'fr' %}
-    <h1>Zarathar</h1>
-    <p class="subtitle">L'archipel des brumes et des dragons</p>
-    {% else %}
-    <h1>Zarathar</h1>
-    <p class="subtitle">The archipelago of mists and dragons</p>
+    <h1>{{ hero_title }}</h1>
+    {% if hero_subtitle %}
+      <p class="subtitle">{{ hero_subtitle }}</p>
     {% endif %}
-    <p class="hero-description">{{ page.home_description }}</p>
-    <a href="https://github.com/camauger/idoine" class="btn btn-primary">{{ t.hero_cta }}</a>
+    <p class="hero-description">{{ hero_description }}</p>
+    {% if hero_cta %}
+      <a href="{{ hero_cta_url|default('https://github.com/camauger/idoine') }}" class="btn btn-primary">{{ hero_cta }}</a>
+    {% endif %}
   </div>
 </section>

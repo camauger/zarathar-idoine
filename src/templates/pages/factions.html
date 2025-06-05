@@ -6,57 +6,60 @@ hero_cta=page.hero_cta, hero_image=page.hero_image %}
 {% include "components/hero.html" %}
 {% endwith %}
 
-<section class="factions" aria-labelledby="factions-title">
-  <h2 id="factions-title">Les Factions de Zarathar</h2>
-
+<section class="factions">
   {% for faction in factions %}
-  <article class="faction-card"
-    aria-labelledby="faction-title-{{ loop.index }}">
+  <article class="faction-card" aria-labelledby="faction-title-{{ loop.index }}">
     <figure>
       {% if faction.image %}
       <img src="{{ '/assets/images/factions/' + faction.image }}"
-        alt="Faction {{ faction.name }}">
+        alt="Faction {{ faction.name }}"
+        loading="lazy">
       {% else %}
-      <img src="{{ '/assets/images/default.jpg' }}" alt="Faction {{ faction.name }}">
+      <img src="{{ '/assets/images/default.jpg' }}"
+        alt="Faction {{ faction.name }}"
+        loading="lazy">
       {% endif %}
     </figure>
+
     <header>
-
-       <h3 id="faction-title-{{ loop.index }}">
-          <i class="{{ faction.icon }}" aria-hidden="true"></i>
-          {{ faction.name }}
-        </h3>
-
+      <h3 id="faction-title-{{ loop.index }}">
+        <i class="{{ faction.icon }}" aria-hidden="true"></i>
+        <span>{{ faction.name }}</span>
+      </h3>
     </header>
 
     <main>
-
-      <div class="faction-content">
+      <section class="faction-content">
         <p class="faction-description">
           {{ faction.description }}
         </p>
         <p class="faction-texte">
           {{ faction.texte }}
         </p>
-      </div>
+      </section>
 
-      <blockquote class="faction-quote">
+      <blockquote class="faction-quote" cite="{{ faction.quote_author }}">
         <p>« {{ faction.quote }} »</p>
         <footer>— {{ faction.quote_author }}</footer>
       </blockquote>
 
-      <div class="faction-archetype">
-        <h4> {{ faction.archetype.nom }}</h4>
+
+    </main>
+    <aside class="faction-archetype" aria-labelledby="archetype-title-{{ loop.index }}">
+        <h4 id="archetype-title-{{ loop.index }}">{{ faction.archetype.nom }}</h4>
         {% if faction.archetype.image %}
-        <img src="{{ '/assets/images/factions/' + faction.archetype.image }}"
-          alt="Archetype {{ faction.archetype.nom }}">
+        <figure>
+          <img src="{{ '/assets/images/factions/' + faction.archetype.image }}"
+            alt="Archetype {{ faction.archetype.nom }}"
+            loading="lazy">
+        </figure>
         {% endif %}
 
         <p class="faction-archetype-texte">
           {{ faction.archetype.texte }}
         </p>
-      </div>
-    </main>
+
+    </aside>
   </article>
   {% endfor %}
 </section>

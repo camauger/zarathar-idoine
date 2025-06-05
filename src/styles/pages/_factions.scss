@@ -1,3 +1,11 @@
+:root {
+    --color-gradient-right: linear-gradient(to right, transparent, var(--color-background) 100%);
+    --color-gradient-left: linear-gradient(to left, transparent, var(--color-background) 100%);
+    --color-gradient-top: linear-gradient(to top, transparent, var(--color-background) 100%);
+    --color-gradient-bottom: linear-gradient(to bottom, transparent, var(--color-background) 100%);
+    --color-faction-background: var(--color-background);
+}
+
 .factions {
   padding: var(--spacing-3);
   width: 100%;
@@ -5,28 +13,42 @@
 }
 
 .faction-card {
-  background: var(--color-background);
+  background: var(--color-faction-background);
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-lg);
   padding: var(--spacing-3);
   margin-bottom: var(--spacing-4);
-  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-3);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
 
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
   }
 
-  figure {
+  > figure {
     width: 100%;
     margin: 0;
-    border-radius: var(--border-radius);
     overflow: hidden;
     aspect-ratio: 16/9;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 30%;
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--color-background) 100%
+      );
+      pointer-events: none;
+    }
 
     img {
       width: 100%;
@@ -98,27 +120,29 @@
   color: var(--color-text);
   margin-top: var(--spacing-3);
   display: grid;
-  grid-template-columns: auto auto;
   gap: var(--spacing-3);
-  grid-template-areas: "image nom" "image texte";
+  grid-template-areas: "archetype-image archetype-nom" "archetype-image archetype-texte";
   align-items: center;
   justify-content: center;
 
   h4 {
-    grid-area: nom;
+    grid-area: archetype-nom;
     color: var(--color-primary);
     margin: 0 0 var(--spacing-2);
     font-size: var(--text-base);
   }
 
   &-texte {
-    grid-area: texte;
+    grid-area: archetype-texte;
     color: var(--color-text);
     line-height: 1.5;
   }
 
+  figure {
+    grid-area: archetype-image;
+  }
+
   img {
-    grid-area: image;
     aspect-ratio: 1/1;
     max-width: 300px;
     max-height: 300px;
@@ -164,29 +188,54 @@
 // Desktop (1024px et plus)
 @media screen and (min-width: 1024px) {
   .factions {
-    max-width: var(--container-width);
+    max-width: 100%;
   }
 
   .faction-card {
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, 100px) auto auto;
     grid-template-areas:
       "image header"
       "image content"
-      "image footer";
-    gap: var(--spacing-4);
+      "archetype archetype";
+    overflow: hidden;
 
-    figure {
+    > figure {
       grid-area: image;
       aspect-ratio: 9/16;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        background: var(--color-gradient-right);
+        pointer-events: none;
+      }
     }
 
     header {
+      display: flex;
+      h3 {
+        font-size: var(--text-2xl);
+        i {
+          font-size: var(--text-3xl);
+        }
+      }
       grid-area: header;
     }
 
     main {
       grid-area: content;
+    }
+
+    aside {
+      grid-area: archetype;
+      padding: var(--spacing-6);
     }
 
     footer {
