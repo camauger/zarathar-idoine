@@ -1,0 +1,92 @@
+{
+    "factions": [
+        {
+            "name": "Empire du Salthar",
+            "groupe": "Eldavar",
+            "image": "salthar.png",
+            "icon": "fas fa-chess-rook",
+            "couleur": "#000000",
+            "description": "Militariste et implacable, l’Empire voit en Zarathar une promesse d’ordre et de grandeur. Ce qu’il ne comprend pas, il l’écrase. Ce qu’il convoite, il le prend.",
+            "texte": "Forgé dans les cendres d’un âge de guerre, l’Empire du Salthar se croit investi d’une mission sacrée : imposer l’ordre au monde, même contre sa volonté. À Zarathar, il ne voit qu’une terre à dompter, quadrillée de fortins, purgée de magie sauvage, soumise aux lois de Soltharion. Pourtant, plus ses armées avancent, plus le sol se dérobe sous leurs bottes. L’archipel résiste, pas seulement par les armes, mais par ses chants, ses souvenirs, ses vérités oubliées. Et certains soldats commencent à écouter. Ce n’est pas l’acier, mais le doute qui fissure les bastions du Salthar. L’Empire triomphera-t-il… ou se perdra-t-il dans les brumes qu’il voulait disperser ? \n\nEt toi, quel serment briseras-tu pour survivre à Zarathar ?",
+            "quote": "Chaque île conquise est une lame affûtée contre le chaos. Chaque victoire est un serment renouvelé à l'Empereur.",
+            "quote_author": "Général Kaldor",
+            "archetype": {
+                "nom": "Le Vétéran Colonial",
+                "image": "archetype.png",
+                "texte": "Tu as servi l’Empire avec honneur. Tu as vu des villages brûler, des pactes être trahis, des amis tomber sans que personne ne prononce leurs noms. Aujourd’hui, tu n’es plus un simple soldat : tu es un colon-milicien, un survivant, un témoin. Tu connais le terrain, les codes tacites, les vérités que Soltharion refuse de voir. Alors quand l’ordre vient de frapper encore, tu hésites. Ton uniforme est peut-être encore intact… mais ton cœur, lui, vacille. Resteras-tu l’épée de l’Empire ? Ou deviendras-tu son ombre en rébellion silencieuse ?"
+            }
+        },
+        {
+            "name": "Royaume d'Andorn",
+            "icon": "fas fa-anchor",
+            "description": "Puissance maritime montante, Andorn tisse sa toile par la foi, le commerce et le verbe doux. Mais derrière chaque prière murmure un calcul.",
+            "texte": "Andorn ne conquiert pas, il convainc. Ses galions dorés accostent les ports de Zarathar avec des prêtres souriants, des contrats bien ficelés et des dieux aux noms chantants. Là où Salthar impose l’ordre par le fer, Andorn s’infiltre par la parole, les dons, les mariages arrangés. Son polythéisme adaptable charme les populations locales, tandis que son influence économique asservit sans violence. Mais cette douceur est une arme, affûtée par des siècles de diplomatie maritime et de calcul théologique. Qui sert vraiment Andorn ? Le peuple ? Les dieux ? Ou une caste de décideurs dissimulés sous les toges ?\n\nEt toi, seras-tu le porteur de lumière... ou l’ambassadeur d’un nouvel asservissement ?",
+            "quote": "Nos dieux sont miséricordieux avec ceux qui accueillent leurs paroles. Pour les autres, seul demeure le silence des vagues.",
+            "quote_author": "Grand Prêtre Taloran",
+            "archetype": {
+                "nom": "Le Missionnaire-Marchand",
+                "texte": "Tu as grandi avec l’idée que la foi et le commerce pouvaient aller de pair. Que convertir était une forme de paix. Mais dans les îles de Zarathar, les regards sont méfiants, les traditions puissantes, les vérités floues. Tu navigues entre marchés et temples, entre prières sincères et tractations secrètes. Chaque offrande peut cacher un piège. Chaque sourire, un mensonge. À quoi renonceras-tu pour faire entendre ta voix ? Et si ta mission d’union n’était qu’un déguisement bienveillant pour une conquête silencieuse ?"
+            }
+        },
+        {
+            "name": "Ligue de Syldorne",
+            "icon": "fas fa-coins",
+            "description": "Fédération marchande insaisissable, la Ligue infiltre plus qu’elle ne conquiert, échange plus qu’elle ne donne. Son vrai pouvoir ? L'attachement qu’elle suscite.",
+            "texte": "La Ligue de Syldorne n’envahit rien : elle achète, elle séduit, elle lie. Descendants d’anciens elfes des mers devenus princes-marchands, les Syldoriens pratiquent une diplomatie aussi raffinée que venimeuse. Ils tissent leurs alliances comme d’autres tendent des pièges, exploitant les failles politiques, les besoins économiques, et les désirs inavoués. Ils n’imposent rien : ils rendent nécessaires. Peu à peu, ports et peuples dépendent de leurs artefacts, de leurs devises, de leurs faveurs. Et lorsque l’on s’en rend compte, il est trop tard. \n\nMais dans les brumes de Zarathar, même leurs plus habiles agents peuvent perdre la main… ou le cœur. \n\nEt toi, sauras-tu manipuler sans devenir toi-même un pion ?",
+            "quote": "Le plus puissant des royaumes se soumet sans même le savoir lorsque ses coffres s'ouvrent à nos trésors.",
+            "quote_author": "Dame Elyria",
+            "archetype": {
+                "nom": "L'Agent d'Influence",
+                "texte": "Tu es formé à l’art de l’apparence et de la persuasion. Tu parles toutes les langues sans jamais révéler ta propre voix. Analyste des rapports de force, fin stratège économique, tu es le levier invisible qui fait basculer des nations. Mais ici, à Zarathar, rien ne se passe comme prévu. Les règles sont mouvantes. Les secrets, vivants. Et parfois, un sourire sincère te trouble plus qu’un marché signé. Es-tu encore un agent de la Ligue… ou deviens-tu quelque chose d’autre ?"
+            }
+        },
+        {
+            "name": "Draconides",
+            "icon": "fa-solid fa-dragon",
+            "description": "Héritiers du souffle primordial, les Draconides veillent sur Zarathar comme sur un feu sacré. Mais la brume s’épaissit, et leur serment vacille.",
+            "texte": "On dit que leur sang brûle encore des derniers rugissements des dragons anciens. Que leur regard porte la mémoire de l’Archipel avant les colons, avant les géants, avant l’oubli. Les Draconides n’ont pas conquis Zarathar. Ils y sont nés. Enracinés dans les veines de pierre, liés par pacte aux éléments, répartis en clans incarnant les forces primordiales. Pourtant, face aux étrangers, leurs chants se taisent, leurs rituels se brisent, leurs sanctuaires se fissurent. Le devoir sacré de gardien devient une malédiction : faut-il pactiser, résister… ou disparaître avec l’ancien monde ?\n\nEt toi, que sacrifieras-tu pour que ta voix ne soit pas la dernière du feu ?",
+            "quote": "Vous nous prenez pour des sauvages, mais c'est vous qui ignorez la voix du feu et les chants du vent.",
+            "quote_author": "Shaman Kaelthys",
+            "archetype": {
+                "nom": "Le Médiateur Élémentaire",
+                "texte": "Tu es né entre deux souffles : celui de l’ancien Zarathar, et celui du monde qui arrive. Tu maîtrises les secrets de la terre, du vent, de l’eau ou de la flamme. Tu ressens les pulsations de l’Archipel comme une deuxième peau. Mais tu es aussi curieux. Curieux de ces étrangers aux armes brillantes, aux idées tranchantes. Tu veux comprendre, traduire, peut-être apaiser. Mais à force de parler deux langues, n’en oublies-tu pas la tienne ? Jusqu’où iras-tu pour qu’un pont survive entre les mondes ?"
+            }
+        },
+        {
+            "name": "Guilde des Artificiers",
+            "icon": "fa-solid fa-gem",
+            "description": "Alchimistes du progrès, les Artificiers rêvent d’un monde où magie et technologie fusionnent. À Zarathar, ce rêve pourrait bien tout détruire… ou tout transformer.",
+            "texte": "La Guilde ne gouverne aucun royaume, ne mène aucune armée. Mais partout où brillent ses gemmes, elle est souveraine. Née d’un pacte secret entre érudits d’Eldavar et maîtres-artisans locaux, la Guilde des Artificiers transcende les frontières. Golems de lave, systèmes d’irrigation enchantés, armes chantantes : leurs inventions façonnent déjà l’avenir de Zarathar. Mais leur curiosité est sans bornes. Et l’archipel cache des forces que nul mécanisme ne devrait réveiller. Jusqu’où iront-ils pour comprendre ? Pour maîtriser ? Pour s’élever ?\n\nEt toi, qu’accepteras-tu de sacrifier sur l’autel du progrès ?",
+            "quote": "La nature nous offre ses gemmes, nous lui offrons l'ordre et la structure. C'est l'équilibre parfait.",
+            "quote_author": "Maître-Artificier Zelias",
+            "archetype": {
+                "nom": "L'Alchimiste-Gemmologue",
+                "texte": "Tu vis pour comprendre. Pour transformer. Pour créer. Les gemmes de Zarathar chantent à ton oreille des secrets que d’autres craignent encore d’imaginer. Tu inventes, tu expérimentes, tu repousses les limites. Mais certaines gemmes murmurent des vérités anciennes. Et certains échecs, même brillamment documentés, laissent des cicatrices. Es-tu l’artisan d’un monde meilleur… ou le premier maillon d’une catastrophe irréversible ?"
+            }
+        },
+        {
+            "name": "Champions d'Aurelios",
+            "icon": "fa-solid fa-sun",
+            "description": "Portés par la lumière, guidés par le zèle, les Champions combattent l'impureté… même lorsqu'elle prend un visage humain.",
+            "texte": "Ils avancent drapés de soleil, l'épée dans une main, la prière dans l'autre. Pour les Champions d’Aurelios, l’archipel est une terre à purifier, où chaque pierre sacrée dissimule un poison ancien, où chaque murmure du vent peut cacher une hérésie. Ce sont des croisés, des exorcistes, des destructeurs d’icônes. Leur foi est leur flamme, leur mission une absolue. Mais Zarathar est un piège pour les certitudes. Ses brumes troublent les dogmes, ses peuples déconcertent, ses forces anciennes répondent à d’autres vérités. Et parfois, la lumière aveugle plus qu’elle ne révèle.\n\nEt toi, que feras-tu quand la voix d’Aurelios se taira dans ton cœur ?",
+            "quote": "La lumière d'Aurelios brûle tout mensonge. Purifiez-vous ou soyez purifiés par l'épée.",
+            "quote_author": "Paladin Alaric",
+            "archetype": {
+                "nom": "Le Croisé en Doute",
+                "texte": "Tu as prêté serment. Tu as connu la ferveur, la clarté d’une cause juste, le réconfort des rituels. Mais à Zarathar, les ennemis prient aussi, les monstres pleurent, et les ruines brillent d’une sagesse oubliée. Tu combats encore — mais pourquoi ? Pour qui ? Chaque victoire te rapproche de quelque chose… mais est-ce encore la lumière ? Ou seulement ton reflet dans les flammes ?"
+            }
+        },
+        {
+            "name": "Pirates de la Brume Éternelle",
+            "icon": "fa-solid fa-cloud",
+            "description": "Ni flibustiers ni héros, les Pirates sont des revenants des brumes. Leur allégeance ? À la mer. Leur mission ? Protéger ce qui ne peut être possédé.",
+            "texte": "Nés d’un mythe ou d’un oubli, ils apparaissent là où le brouillard se fait chair. Leur pavillon n’existe pas, mais leur nom fait frissonner les amiraux. Ce ne sont pas des pillards, mais des gardiens farouches, convaincus que Zarathar n’appartient à personne. Leurs navires glissent entre les mondes, portés par les marées et les volontés anciennes. Ils frappent, puis disparaissent, laissant derrière eux des colons désemparés et des signes tracés dans la brume. Certains disent qu’ils obéissent à des esprits. D’autres prétendent qu’ils n’ont jamais quitté Zarathar. \n\nEt toi, es-tu là pour défendre l’Archipel… ou pour t’y perdre à jamais ?",
+            "quote": "Les Brumes sont nos alliées et notre armure. Que ceux qui pillent notre terre connaissent notre colère.",
+            "quote_author": "Capitaine Varenne",
+            "archetype": {
+                "nom": "L'Éclaireur des Brumes",
+                "texte": "Tu connais les voies que nul n’ose tracer sur les cartes. Tu écoutes les voix dans les courants, les silences dans les feuillages. Ancien colon repenti ou enfant né sur un pont de brume, tu es à la fois éclaireur, protecteur et témoin. Mais les brumes murmurent aussi à ton esprit. Elles t’appellent. Jusqu’à quand resteras-tu humain ? Jusqu’à quand refuseras-tu d’appartenir entièrement à la mer ?"
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Empire of Salthar",
+    "icon": "fas fa-chess-rook",
+    "description": "Militaristic and unyielding, the Empire sees Zarathar as a promise of order and greatness. What it does not understand, it crushes. What it desires, it takes.",
+    "texte": "Forged in the ashes of an age of war, the Empire of Salthar believes it has a sacred mission: to impose order upon the world, even against its will. In Zarathar, it sees a land to tame — covered with forts, stripped of wild magic, brought under the rule of Soltharion. Yet the deeper its armies march, the more the ground shifts beneath their boots. The archipelago resists — not just with weapons, but with songs, memories, and forgotten truths. And some soldiers begin to listen. It's not steel, but doubt, that begins to crack the Empire’s bastions. Will Salthar prevail... or lose itself in the mists it sought to dispel?\n\nAnd you — what oath will you break to survive Zarathar?",
+    "quote": "Each island conquered is a sharpened blade against chaos. Each victory is a renewed oath to the Emperor.",
+    "quote_author": "General Kaldor",
+    "archetype": {
+      "nom": "The Colonial Veteran",
+      "texte": "You served the Empire with honor. You watched villages burn, treaties break, and friends fall — nameless and unburied. Now, you're no longer just a soldier: you're a militia-colonist, a survivor, a witness. You know the terrain, the unspoken rules, the truths Soltharion refuses to see. So when the next order comes down, you hesitate. Your uniform is intact... but your heart? That wavers. Will you remain the Empire’s blade — or become its silent shadow?"
+    }
+  },
+  {
+    "name": "Kingdom of Andorn",
+    "icon": "fas fa-anchor",
+    "description": "A rising maritime power, Andorn weaves its influence through faith, trade, and soft words. But behind every prayer lies a calculation.",
+    "texte": "Andorn does not conquer. It convinces. Its golden galleons dock with smiling priests, ironclad contracts, and gods whose names roll easily from the tongue. Where Salthar imposes by force, Andorn slips in with gifts, arranged marriages, and adaptable theology. Its polytheism charms local cultures, while its commerce builds silent dependencies. This gentleness is a weapon honed by generations of diplomatic maneuvering. Who does Andorn truly serve — the people, the gods, or unseen powers beneath silk robes?\n\nAnd you, will you be a bearer of light… or the herald of silent dominion?",
+    "quote": "Our gods are merciful to those who welcome their voices. For the rest, only the silence of the waves remains.",
+    "quote_author": "High Priest Taloran",
+    "archetype": {
+      "nom": "The Missionary-Merchant",
+      "texte": "You were raised to believe that faith and trade walk hand in hand. That conversion brings peace. But here, on Zarathar, the looks are wary, the traditions old, the truths tangled. You walk between temples and marketplaces, between sincere prayers and shadow deals. Every offering might hide a trap. Every smile, a lie. What will you abandon to be heard? And if your mission of unity is just a pleasant disguise for conquest — will you wear it proudly?"
+    }
+  },
+  {
+    "name": "League of Syldorne",
+    "icon": "fas fa-coins",
+    "description": "An elusive merchant federation, the League conquers not with swords, but with silks and signatures. Its true power? Making others believe they chose it.",
+    "texte": "The League conquers nothing: it purchases, seduces, entangles. Descended from sea-elves turned merchant-princes, Syldorne excels in diplomacy as elegant as it is venomous. They weave their alliances like nets, exploiting political gaps, economic needs, and unspoken desires. They impose nothing — they become indispensable. By the time ports and people realize they rely on Syldorne's artifacts, coin, and goodwill, it’s already too late.\n\nBut even Syldorne’s finest agents can lose their grip… or their heart.\n\nWill you pull the strings — or become just another pawn?",
+    "quote": "The mightiest kingdom kneels without knowing it, when its coffers open to our treasures.",
+    "quote_author": "Lady Elyria",
+    "archetype": {
+      "nom": "The Influence Agent",
+      "texte": "You were trained to say everything without revealing anything. You analyze power, shift balances, whisper at court and vanish before the echo. You are the unseen fulcrum that tilts nations. But in Zarathar, the rules slip, the secrets breathe, and some smiles strike deeper than any deal. Are you still the League’s servant… or something else entirely?"
+    }
+  }
+]

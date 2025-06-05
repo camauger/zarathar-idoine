@@ -230,12 +230,13 @@
     }
 
     main {
+      padding: var(--spacing-12);
       grid-area: content;
     }
 
     aside {
       grid-area: archetype;
-      padding: var(--spacing-6);
+      padding: var(--spacing-16);
     }
 
     footer {

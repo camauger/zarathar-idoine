@@ -25,5 +25,16 @@ class ConfigLoader:
             return yaml.safe_load(f)
 
     def load_factions(self):
-        with open(self.src_path / "data" / "factions.json", "r", encoding="utf-8") as f:
-            return json.load(f)
+        factions = {}
+        for lang in ["fr", "en"]:
+            try:
+                with open(
+                    self.src_path / "data" / f"factions_{lang}.json",
+                    "r",
+                    encoding="utf-8",
+                ) as f:
+                    factions[lang] = json.load(f)
+            except FileNotFoundError:
+                print(f"Warning: factions_{lang}.json not found")
+                factions[lang] = {"factions": []}
+        return factions

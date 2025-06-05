@@ -7,7 +7,7 @@ hero_cta=page.hero_cta, hero_image=page.hero_image %}
 {% endwith %}
 
 <section class="factions">
-  {% for faction in factions %}
+  {% for faction in factions[page.lang].factions %}
   <article class="faction-card" aria-labelledby="faction-title-{{ loop.index }}">
     <figure>
       {% if faction.image %}
@@ -42,10 +42,10 @@ hero_cta=page.hero_cta, hero_image=page.hero_image %}
         <p>« {{ faction.quote }} »</p>
         <footer>— {{ faction.quote_author }}</footer>
       </blockquote>
-
-
     </main>
-    <aside class="faction-archetype" aria-labelledby="archetype-title-{{ loop.index }}">
+
+    <aside>
+      <section class="faction-archetype" aria-labelledby="archetype-title-{{ loop.index }}">
         <h4 id="archetype-title-{{ loop.index }}">{{ faction.archetype.nom }}</h4>
         {% if faction.archetype.image %}
         <figure>
@@ -58,7 +58,7 @@ hero_cta=page.hero_cta, hero_image=page.hero_image %}
         <p class="faction-archetype-texte">
           {{ faction.archetype.texte }}
         </p>
-
+      </section>
     </aside>
   </article>
   {% endfor %}
